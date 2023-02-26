@@ -2,6 +2,11 @@
 <html>
     <head>
         <link rel="stylesheet" href="./CSS/index.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+
+        
     </head>
     <body>
         <!-- Header -->
@@ -29,12 +34,13 @@
                 <h1>About Me</h1>
                 <p>Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Sed porttitor lectus nibh.</p>
                 <button>Download Resume</button>
+				<a href="#myContactSection" id="contactButton">Contact Me</a>
             </div>
         </section>
 
         <!-- My UX Skills -->
         <section class="mySkills">
-            <h1>My UX Skills</h1>
+            <h2>My UX Skills</h2>
             <div class="flexContainer">
                 <div>
                     <img src="" alt="">
@@ -57,7 +63,7 @@
 
         <!-- My Work -->
         <section class="myWork">
-            <h1>My Work</h1>
+            <h2>My Work</h2>
             <div class="workGrid">
                 
                 <!-- Project 1 -->
@@ -95,10 +101,41 @@
 
 
             </div>
-            <h3> View All Projects </h3>
+            <div class="workCTASection">
+                <button> View All Projects </button>
+            </div>
+            
         </section>
 
+		<!-- Contact -->
+        <section class="myContact" id="myContactSection">
+            <h2>Contact Me</h2>
 
+            <div id="contactTab">
+                <ul>
+                    <li><a href="#tabs-1">Phone</a></li>
+                    <li><a href="#tabs-2">Email</a></li>
+                    <li><a href="#tabs-3">Social Network</a></li>
+                </ul>
+
+                <div id="tabs-1">
+                    <p>Cell: (647) 745-3722</p>
+                </div>
+
+                <div id="tabs-2">
+                    <p>Email: maya.danh3722@gmail.com</p>
+                </div>
+
+                <div id="tabs-3">
+                    <ul>
+                        <li>Behance: <a href="https://www.behance.net/">https://www.behance.net/</a></li>
+                        <li>LinkedIn: <a href="https://ca.linkedin.com/">https://ca.linkedin.com/</a></li>
+                        <li>Instagram: <a href="https://www.instagram.com/">https://www.instagram.com/</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
 
         
         <!-- Footer -->
@@ -112,4 +149,6 @@
         </footer>
 
     </body>
+
+    <script src="js/index.js"></script>
 </html>
